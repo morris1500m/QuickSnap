@@ -57,16 +57,11 @@ namespace CardGames
 			// Draw the top card
 			Card top = myGame.TopCard;
 			if (top != null)
-			{
-<<<<<<< HEAD
-				
+			{	
 				SwinGame.DrawText ("Player 1 score: " + myGame.Score(0), Color.Green, 0, 30);
-				
-=======
 				SwinGame.DrawText ("Top Card is " + top.ToString (), Color.Blue, 0, 20);
-				
 				SwinGame.DrawText ("Player 2 score: " + myGame.Score(1), Color.Blue, 0, 40);
->>>>>>> change-text-color
+
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), top.CardIndex, 350, 50);
 			}
 			else
